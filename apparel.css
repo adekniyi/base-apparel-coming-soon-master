@@ -36,7 +36,7 @@ input[type="email"]{
 button:hover{
     box-shadow: 3px 3px 4px 4px rgba(221, 145, 145, 0.5);
     width: 105px;
-    height: 50px;
+    height: 52px;
 }
 ::placeholder{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -114,7 +114,7 @@ button:hover{
     }
     input[type="email"]{
         width: 95%;
-        height: 60px;
+        height: 50px;
         border-radius: 25px;
         border: 1px solid rgb(206, 147, 147);
         padding-left: 30px;
