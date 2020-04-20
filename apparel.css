@@ -27,11 +27,16 @@ p{
 }
 input[type="email"]{
     width: 95%;
-    height: 60px;
+    height: 50px;
     border-radius: 25px;
     border: 1px solid rgb(206, 147, 147);
     padding-left: 30px;
     margin-bottom: 10px;
+}
+button:hover{
+    box-shadow: 3px 3px 4px 4px rgba(221, 145, 145, 0.5);
+    width: 105px;
+    height: 50px;
 }
 ::placeholder{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -60,12 +65,13 @@ input[type="email"]{
 .arrow {
         top: 0px;
         right: -20px;
-        height: 62px;
+        height: 54px;
         width: 100px;
         border-radius: 25px;
         background: linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
         border: none;
         box-shadow: 2px 5px 4px var(--desatured-red);
+        cursor: pointer;
 }
 #error-icon {
     top: 15px;
@@ -83,23 +89,9 @@ input[type="email"]{
     .container{
     display:flex;
    } 
-    .image{
+    .image img{
         float: right;
         width: 50%;
-    }
-    img{
-        width: 100%;
-        } 
-    .writeup{
-   margin-top:50px;
-   width: 50%;
-   margin-left:3%;
-      }
-      .logo img{
-        margin-top: 62px;
-        width: 170px;
-        height: 37px;
-        margin-left: 3%;
     }
   }
 
@@ -114,28 +106,20 @@ input[type="email"]{
      .image{
     width: 100%;
      }
-     img{
-    width: 100%;
+       .writeup{
+        text-align: center;
+        width: 70%;
+        /* margin-left: 12%; */
+        margin-top: 20px;
     }
-    input[type="submit"]{
-    margin: 0 auto;
-    width: 120px;
-    height: 50px;
-    margin-bottom:20px;
-    margin-left: 20%;
-}
-   /* input[type="email"]{
-    margin: 0 auto;
-    width: 347px;
-    height: 60px;
-    margin-bottom:10px;
-     } */
-     .writeup{
-    margin-top:50px;
-    width: 300px;
-    margin-left:25px;
-    text-align: center;
-       }
+    input[type="email"]{
+        width: 95%;
+        height: 60px;
+        border-radius: 25px;
+        border: 1px solid rgb(206, 147, 147);
+        padding-left: 30px;
+        margin-bottom: 10px;
+    }
     .logo img{
         margin-bottom: 150px;
         margin-top: 50px;
@@ -149,7 +133,7 @@ input[type="email"]{
     }
  }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 378px){
   .container{
      display:flex;
      flex-direction:column-reverse;
@@ -157,14 +141,48 @@ input[type="email"]{
   }
   .writeup{
     margin-top:50px;
-    width: 100%;
-    margin-left:25px;
+    width: 77%;
     text-align: center;
        }
   input[type="email"]{
     margin: 0 auto;
+    margin-left: -20px;
     width: 100%;
-    height: 60px;
+    height: 50px;
     margin-bottom:10px;
      }
+    .writeup h1{
+        font-family: Euphemia, Arial, Helvetica, sans-serif;
+       font-size: 45px;
+       letter-spacing: 0.2em;
+    }
+   .writeup span{
+        color: rgb(206, 147, 147);
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 45px;
+        text-transform: uppercase;
+    }
+   .writeup p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 14px;
+        color: rgb(206, 147, 147);
+        margin-bottom: 20px;
+    }
+    .arrow {
+        top: 0px;
+        right: -20px;
+        height: 53px;
+        width: 100px;
+        border-radius: 25px;
+        background: linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        border: none;
+        box-shadow: 2px 5px 4px var(--desatured-red);
+}
+        #error-icon {
+        top: 15px;
+        right: 5px;
+        height: 28px;
+        width: 20px;
+        display: none;
+        }
 }
